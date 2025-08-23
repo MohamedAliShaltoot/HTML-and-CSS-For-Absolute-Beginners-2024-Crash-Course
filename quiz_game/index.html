@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="quiz-container">
-        <h1>Quiz Game</h1>
-        <div id="question-container">
-            <p id="question"></p>
-            <div id="answer-buttons" class="btn-container">
-                <button class="btn" id="btn1"></button>
-                <button class="btn" id="btn2"></button>
-                <button class="btn" id="btn3"></button>
-                <button class="btn" id="btn4"></button>
-            </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen active" id="start-screen">
+        <h1>Quiz Time !</h1>
+        <p id="question">Test your knowledge with these fun questions</p>
+        <button id="start-button" class="btn">Start Quiz</button>
+      </div>
+
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="" question-text>Questions</h2>
+          <div id="quiz-info">
+            <p>
+              Question <span id="current-question">1</span> of <span>5</span>
+            </p>
+   <p>
+              Score: <span id="score">0
+            </p>
+
+          </div>
         </div>
-        <button id="next-button" class="btn">Next</button>
+
+ <div id="anwers-container" class="anwers-container">
+    <!--
+    Answers will put here when reach to js code -->
+      </div>
+             <div  class="progress-bar">
+                   <div id="progress" class="progress">
+
+                   </div>
+             </div>
+
+
+
+
+      </div>
+
+
+<div id="result-screen" class="screen">
+<h1>Quiz results</h1>
+<div class="result-info">
+
+    <p>you scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+
+    <div id="result-message">
+        Good job
+
+    </div>
+
+    <button id="restart-btn" >Restart Quiz</button>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
     </div>
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
