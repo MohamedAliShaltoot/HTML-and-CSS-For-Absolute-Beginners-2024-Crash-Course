@@ -26,3 +26,159 @@ body {
   width: 100%;
   position: relative;
 }
+
+/*
+Screens
+*/
+
+.screen {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
+/*
+Start Screen
+*/
+
+#start-screen h1 {
+  color: #e86a33;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+#start-screen p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.quiz-header {
+  margin-bottom: 2rem;
+}
+
+#question-text {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.answer-btn {
+  background-color: #f8f0e8;
+  color: 333;
+  border: 2px solid #eadbc8;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.answer-btn:hover {
+  background-color: #eadbc8;
+  border-color: #dac0ae;
+}
+
+.answer-btn.correct {
+  background-color: #e6fff0;
+  border-color: #a3f0c4;
+  color: #28a745;
+}
+
+.answer-btn.incorrect {
+  background-color: #e6fff0;
+  border-color: #ffbdbd;
+  color: #dc3545;
+}
+
+.progess-bar {
+  height: 10px;
+  background-color: #f8f0e8;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #f8f0e5;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #e86a33;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/*
+Result screen
+*/
+
+#result-screen h1 {
+  color: #e86a33;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.result-info {
+  color: #f8f0e8;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.result-info p {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* .result-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+} */
+
+#result-message {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #e86a33;
+}
+
+button {
+  background-color: #e86a33;
+  color: white;
+  border-radius: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d45b28;
+}
