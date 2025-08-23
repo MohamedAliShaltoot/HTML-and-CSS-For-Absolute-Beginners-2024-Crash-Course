@@ -182,3 +182,28 @@ button {
 button:hover {
   background-color: #d45b28;
 }
+
+/* Responsive Design*/
+
+@media (max-width: 600px) {
+  .screen {
+    padding: 1rem;
+  }
+
+  #start-screen h1 {
+    font-size: 2rem;
+  }
+
+  #question-text {
+    font-size: 1.3rem;
+  }
+
+  .answer-btn {
+    padding: 12px;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
