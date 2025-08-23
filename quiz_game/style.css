@@ -110,11 +110,12 @@ Start Screen
   color: #dc3545;
 }
 
-.progess-bar {
+.progress-bar {
   height: 10px;
   background-color: #f8f0e8;
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .progress-bar-fill {
@@ -123,7 +124,7 @@ Start Screen
   transition: width 0.3s ease;
   border-radius: 5px;
   overflow: hidden;
-  margin-top: 2px;
+  margin-top: 10px;
 }
 
 .progress {
@@ -131,6 +132,7 @@ Start Screen
   background-color: #e86a33;
   width: 0%;
   transition: width 0.3s ease;
+  margin-top: 10px;
 }
 
 /*
@@ -156,11 +158,11 @@ Result screen
   font-size: 1.3rem;
 }
 
-/* .result-score {
+.result-score {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
-} */
+}
 
 #result-message {
   font-weight: 600;
