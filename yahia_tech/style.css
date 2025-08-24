@@ -3,7 +3,8 @@ body {
 }
 
 .header {
-  background-color: blue;
+  background-color: #0171f9;
   justify-content: space-between;
-  display: flex;
+  display: flex; /* make all class elements in the same row */
+  align-items: center; /* make all class elements in center*/
 }
