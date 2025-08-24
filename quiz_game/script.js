@@ -70,8 +70,8 @@ let score = 0;
 
 let answerDisabled = false;
 
-totalQuestionsSpan.textContent = quizQuestions.length;
-maxScoreSpan.textContent = quizQuestions.length;
+totalQuestionsSpan.textContent = quizQuestions.length; // how many questions are there?
+maxScoreSpan.textContent = quizQuestions.length; // the maximum score possible
 
 // event listeners
 startButton.addEventListener("click", startQuiz);
@@ -79,7 +79,7 @@ restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
   currentQuestionIndex = 0;
-  scoreSpan.textContent = 0;
+  scoreSpan.textContent = 0; // current score
 
   startScreen.classList.remove("active");
   quizScreen.classList.add("active");
@@ -91,8 +91,11 @@ function showQuestion() {
   answerDisabled = false;
   const currentQuestion = quizQuestions[currentQuestionIndex];
   currentQuestionSpan.textContent = currentQuestionIndex + 1;
-  const progressPercent = (currentQuestionIndex / quizQuestions.length) * 100;
+
+  const progressPercent =
+    ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
   progressBar.style.width = `${progressPercent}%`;
+
   questionText.textContent = currentQuestion.question;
 
   answersContainer.innerHTML = "";
@@ -101,7 +104,7 @@ function showQuestion() {
     button.textContent = answer.text;
     button.classList.add("answer-btn");
     button.dataset.correct = answer.correct;
-    button.addEventListener("click", () => selectAnswer);
+    button.addEventListener("click", selectAnswer);
     answersContainer.appendChild(button);
   });
 }
@@ -127,10 +130,6 @@ function selectAnswer(event) {
     }
   });
 
-  if (isCorrect) {
-    score++;
-    scoreSpan.textContent = score;
-  }
   setTimeout(() => {
     currentQuestionIndex++;
     if (currentQuestionIndex < quizQuestions.length) {
