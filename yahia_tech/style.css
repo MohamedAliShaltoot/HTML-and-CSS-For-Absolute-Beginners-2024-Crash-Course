@@ -119,3 +119,8 @@ height: 30px;
    
   
 }
+
+.game-card-collector {
+    display: flex;
+    gap: 20px;
+}
