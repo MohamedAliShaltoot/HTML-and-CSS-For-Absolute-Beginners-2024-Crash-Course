@@ -7,14 +7,115 @@ body {
   justify-content: space-between;
   display: flex; /* make all class elements in the same row */
   align-items: center; /* make all class elements in center*/
-  padding: 10px;
+  padding: 20px;
 }
 .logo {
   width: 100px;
 }
 
 .header-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.header-links a:hover {
+  background-color: #2386fe;
+}
+
+.header-links button {
+  color: #fff;
+  background-color: coral;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.btn {
+     color: #fff;
+  background-color: coral;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.btn:hover {
+  
+  background-color: #ffa500;
+  
+}
+
+
+
+.landing-page{
+    display: flex;
+    background-color: #0171f9;
+    justify-content: space-between;
+    padding: 5px 30px;
+    align-items: center;
     color: white;
-    text-decoration: none;
-    
+    border-radius: 0 0 50px 50px;
+}
+
+.landing-page-search input{
+ border-radius: 50px;
+ border: none;
+ outline: 0;
+ height: 30px;
+ padding: 0 10px;
+}
+
+.landing-page-search button{
+ position: absolute; /* to fully control the button's position */
+height: 30px;
+ left: 190px;
+}
+
+.landing-page-image-container img {
+    border-radius: 20px;
+    width: 250px;
+}
+
+.landing-page-left{
+    width: 550px;
+
+}
+.trending-container{
+    padding: 25px 50px;
+}
+
+.trending-container span {
+   text-transform: uppercase;
+    color:coral ;
+    font-size: 14px;
+}
+
+.trending-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 0 0 0 10px;
+
+}
+
+.game-card-container img {
+    width: 200px;
+     padding: 0 0 0 10px;
+      border-radius: 20px;
+}
+
+.game-card-container{
+    /* background-color: rgb(31, 159, 159); */
+    width:200px;
+    border-radius: 20px;
+   
+  
 }
