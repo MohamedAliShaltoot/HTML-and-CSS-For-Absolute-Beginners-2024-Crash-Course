@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: blue;
+  justify-content: space-between;
+  display: flex;
+}
