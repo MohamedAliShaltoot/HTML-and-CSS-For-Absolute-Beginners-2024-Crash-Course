@@ -7,4 +7,14 @@ body {
   justify-content: space-between;
   display: flex; /* make all class elements in the same row */
   align-items: center; /* make all class elements in center*/
+  padding: 10px;
+}
+.logo {
+  width: 100px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    
 }
